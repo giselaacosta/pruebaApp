@@ -20,7 +20,7 @@ export class RegistrationPage implements OnInit {
       .then((res) => {
         this.router.navigate(['home']);          
       }).catch((error) => {
-        window.alert(error.message)
+        this.router.navigate(['error']);          
       })
   }
 

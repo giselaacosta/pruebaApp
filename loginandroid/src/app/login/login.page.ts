@@ -21,7 +21,7 @@ export class LoginPage implements OnInit {
           this.router.navigate(['home']);          
         
       }).catch((error) => {
-        window.alert(error.message)
+        this.router.navigate(['error']); 
       })
   }
 
